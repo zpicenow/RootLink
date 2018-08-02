@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fefefe"
+    tools:context="com.example.zpice.rootlink.LogIn"
+    android:weightSum="1">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="90dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/root" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_gravity="center"
+            android:text="管理您的智能硬件"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="70dp"
+            android:layout_height="match_parent" />
+
+
+        <ImageView
+            android:id="@+id/imageView_id"
+            android:layout_width="25dp"
+            android:layout_height="35dp"
+            android:src="@drawable/id" />
+
+        <EditText
+            android:id="@+id/editTextId_id"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:hint="用户名"
+            android:inputType="textEmailAddress"
+
+            android:maxLength="10"
+             />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="70dp"
+            android:layout_height="match_parent" />
+
+
+        <ImageView
+            android:id="@+id/imageView_key"
+            android:layout_width="25dp"
+            android:layout_height="35dp"
+            android:src="@drawable/key" />
+
+        <EditText
+            android:id="@+id/editTextKey_id"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:hint="密码"
+            android:maxLength="12"
+            android:inputType="textPassword"
+             />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="53dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_sign"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:text="注册账号"
+            android:onClick="log_sign"
+            android:gravity="bottom|center_horizontal"
+            android:textSize="13dp"
+            tools:ignore="OnClick" />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/btn_log"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:background="#55177cb0"
+            android:text="登陆"
+            android:onClick="log"
+            android:textSize="25dp"/>
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/btn_forget"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:text="水文系统"
+            android:onClick="forget"
+            android:gravity="bottom|center_horizontal"
+            android:textSize="13dp"/>
+
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/id_bar_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"/>
+
+</LinearLayout>

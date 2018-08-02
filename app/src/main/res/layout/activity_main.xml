@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/id_linearLayout"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:background="#5f9f9f"
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="数据"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp" />
+
+    <TextView
+        android:background="@color/gray"
+        android:id="@+id/phTV"
+        android:paddingLeft="20dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="PH传感器："
+        android:textSize="20sp" />
+    <TextView
+        android:background="@color/gray"
+        android:id="@+id/wenDuTV"
+        android:paddingLeft="20dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="温度："
+        android:textSize="20sp" />
+    <TextView
+        android:background="@color/gray"
+        android:id="@+id/yanDuTV"
+        android:paddingLeft="20dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="盐度："
+        android:textSize="20sp" />
+    <TextView
+        android:background="@color/gray"
+        android:id="@+id/zhuoDuTV"
+        android:paddingLeft="20dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="浊度："
+        android:textSize="20sp" />
+
+    <!--<Button-->
+        <!--android:layout_marginTop="200dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:id="@+id/button"-->
+        <!--android:layout_width="200dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="更新数据" />-->
+</LinearLayout>
