@@ -19,7 +19,7 @@
             android:gravity="center"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="40dp"
+            android:layout_height="50dp"
             android:text="近海水质监测系统RootLink"
             android:textColor="@android:color/background_light"
             android:textSize="24sp" />
