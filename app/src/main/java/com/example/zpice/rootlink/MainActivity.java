@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
                                     break;
                                 case 3:
                                     temp = Integer.parseInt(values[i]) / 100.00;
-                                    DecimalFormat df3 = new DecimalFormat("0.00");
+                                    DecimalFormat df3 = new DecimalFormat("0.0");
                                     showTV[i].setText(df3.format(temp));
                                     break;
                             }
@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
                     update();
                     System.out.println("update");
                     try {
-                        Thread.sleep(5000);
+                        Thread.sleep(15000);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }

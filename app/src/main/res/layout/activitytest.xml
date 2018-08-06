@@ -40,7 +40,7 @@
                 android:text="PH值："
                 android:paddingLeft="15dp"
                 android:gravity="bottom"
-                android:textSize="25sp"
+                android:textSize="35sp"
                 android:layout_height="0dp" />
             <LinearLayout
                 android:layout_width="match_parent"
@@ -55,7 +55,7 @@
                     android:text="10000"
                     android:gravity="center"
                     android:paddingTop="15dp"
-                    android:textSize="70sp"
+                    android:textSize="90sp"
                     android:textStyle="bold"
                     android:layout_height="match_parent" />
             </LinearLayout>
@@ -74,7 +74,7 @@
                 android:text="温度："
                 android:paddingLeft="15dp"
                 android:gravity="bottom"
-                android:textSize="25sp"
+                android:textSize="35sp"
                 android:layout_height="0dp" />
             <LinearLayout
                 android:layout_width="match_parent"
@@ -89,7 +89,7 @@
                     android:gravity="right|center"
                     android:paddingRight="20dp"
                     android:paddingTop="15dp"
-                    android:textSize="70sp"
+                    android:textSize="90sp"
                     android:textStyle="bold"
                     android:layout_height="match_parent" />
                 <TextView
@@ -125,7 +125,7 @@
                 android:text="盐度："
                 android:paddingLeft="15dp"
                 android:gravity="bottom"
-                android:textSize="25sp"
+                android:textSize="35sp"
                 android:layout_height="0dp" />
             <LinearLayout
                 android:layout_width="match_parent"
@@ -139,8 +139,8 @@
                     android:text="10000"
                     android:gravity="right|center"
                     android:paddingTop="15dp"
-                    android:paddingRight="30dp"
-                    android:textSize="70sp"
+                    android:paddingRight="10dp"
+                    android:textSize="90sp"
                     android:textStyle="bold"
                     android:layout_height="match_parent" />
                 <TextView
@@ -165,7 +165,7 @@
                 android:text="浊度："
                 android:paddingLeft="15dp"
                 android:gravity="bottom"
-                android:textSize="25sp"
+                android:textSize="35sp"
                 android:layout_height="0dp" />
             <LinearLayout
                 android:layout_width="match_parent"
@@ -180,7 +180,7 @@
                     android:gravity="right|center"
                     android:paddingTop="15dp"
                     android:paddingRight="30dp"
-                    android:textSize="70sp"
+                    android:textSize="90sp"
                     android:textStyle="bold"
                     android:layout_height="match_parent" />
                 <TextView
