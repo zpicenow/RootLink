@@ -8,15 +8,31 @@
     tools:context=".MainActivity"
     android:background="@color/gray"
     android:orientation="vertical">
-    <TextView
+    <LinearLayout
         android:background="@color/colorPrimaryDark"
-        android:id="@+id/textView"
-        android:gravity="center"
+
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:text="近海水质监测系统Rootlink"
-        android:textColor="@android:color/background_light"
-        android:textSize="24sp" />
+        android:orientation="horizontal"
+        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/textView"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:text="近海水质监测系统RootLink"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp" />
+        <TextView
+            android:layout_width="30dp"
+            android:id="@+id/countTV"
+            android:text="count"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
 
 
 
@@ -193,6 +209,7 @@
             </LinearLayout>
 
         </LinearLayout>
+
 
 
     </LinearLayout>

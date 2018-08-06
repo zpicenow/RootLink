@@ -15,17 +15,17 @@ import java.text.DecimalFormat;
 
 public class MainActivity extends AppCompatActivity {
 
-    static TextView[] showTV = new TextView[4];
+    static TextView[] showTV = new TextView[5];
 
     static String cookie;
-    static String[] values = {"", "", "", ""};
-    static String[] initString = {"", "", "盐度：\n", "浊度："};
-    int[] tvIds = {R.id.phTV, R.id.wenDuTV, R.id.yanDuTV, R.id.zhuoDuTV};
-    static String [] sensorIds = {
+    static String[] values = {"", "", "", "",""};
+    int[] tvIds = {R.id.phTV, R.id.wenDuTV, R.id.yanDuTV, R.id.zhuoDuTV,R.id.countTV};
+    static String[] sensorIds = {
             "sensorId=d3523470-7682-4b67-b645-3d13883152a5",
             "sensorId=cd99a95d-5aa0-422d-8b4c-a3cbb52a90a1",
             "sensorId=5ec4f318-1f01-4a2c-a682-a60cd7e289e5",
-            "sensorId=d1ec2ff7-f48f-429d-8993-7174b92c4084"};
+            "sensorId=d1ec2ff7-f48f-429d-8993-7174b92c4084",
+            "sensorId=fd877998-8d69-47df-bb13-0dddca19bea5"};
 
     @SuppressLint("HandlerLeak")
     static Handler handler = new Handler() {
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         public void handleMessage(Message msg) {
 
             if (msg.what == 0x123) {
-                for (int i = 0; i < 4; i++) {
+                for (int i = 0; i < 5; i++) {
                     while (true) {
                         if (values[i] != "") {
                             double temp = 0.00;
@@ -58,6 +58,9 @@ public class MainActivity extends AppCompatActivity {
                                     temp = Integer.parseInt(values[i]) / 100.00;
                                     DecimalFormat df3 = new DecimalFormat("0.0");
                                     showTV[i].setText(df3.format(temp));
+                                    break;
+                                case 4:
+                                    showTV[i].setText(values[i]);
                                     break;
                             }
                             break;
@@ -88,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
 
 //        update = findViewById(R.id.button);
 
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < 5; i++) {
             showTV[i] = findViewById(tvIds[i]);
         }
 
@@ -116,12 +119,12 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 try {
                     cookie = MyHttpUrlConn.Post("http://www.rootlink.cn/api/login", "username=769484623&password=11223388", "utf-8", false, "");
-                    String[] responses = new String[4];
-                    for (int i = 0; i < 4; i++) {
+                    String[] responses = new String[5];
+                    for (int i = 0; i < 5; i++) {
                         responses[i] = MyHttpUrlConn.Get("http://www.rootlink.cn/api/sensor/getValue", sensorIds[i], "utf-8", cookie);
                     }
-                    String[][] dataStrings = new String[4][];
-                    for (int i = 0; i < 4; i++) {
+                    String[][] dataStrings = new String[5][];
+                    for (int i = 0; i < 5; i++) {
                         dataStrings[i] = responses[i].split("\"");
                         values[i] = dataStrings[i][9];
                     }
