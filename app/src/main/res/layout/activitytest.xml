@@ -71,7 +71,7 @@
                     android:text="10000"
                     android:gravity="center"
                     android:paddingTop="15dp"
-                    android:textSize="90sp"
+                    android:textSize="100sp"
                     android:textStyle="bold"
                     android:layout_height="match_parent" />
             </LinearLayout>
@@ -105,14 +105,14 @@
                     android:gravity="right|center"
                     android:paddingRight="20dp"
                     android:paddingTop="15dp"
-                    android:textSize="90sp"
+                    android:textSize="100sp"
                     android:textStyle="bold"
                     android:layout_height="match_parent" />
                 <TextView
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:text="℃"
-                    android:textSize="20sp"
+                    android:textSize="40sp"
                     android:gravity="center_vertical"
                     android:layout_height="match_parent" />
             </LinearLayout>
@@ -156,14 +156,14 @@
                     android:gravity="right|center"
                     android:paddingTop="15dp"
                     android:paddingRight="10dp"
-                    android:textSize="90sp"
+                    android:textSize="100sp"
                     android:textStyle="bold"
                     android:layout_height="match_parent" />
                 <TextView
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:text="PPT"
-                    android:textSize="20sp"
+                    android:textSize="40sp"
                     android:gravity="center"
                     android:layout_height="match_parent" />
             </LinearLayout>
@@ -196,14 +196,14 @@
                     android:gravity="right|center"
                     android:paddingTop="15dp"
                     android:paddingRight="30dp"
-                    android:textSize="90sp"
+                    android:textSize="100sp"
                     android:textStyle="bold"
                     android:layout_height="match_parent" />
                 <TextView
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:text="NTU"
-                    android:textSize="20sp"
+                    android:textSize="40sp"
                     android:gravity="center_vertical"
                     android:layout_height="match_parent" />
             </LinearLayout>

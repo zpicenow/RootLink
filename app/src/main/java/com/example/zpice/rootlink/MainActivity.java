@@ -47,8 +47,8 @@ public class MainActivity extends AppCompatActivity {
 
                                     break;
                                 case 1:
-                                    temp = Integer.parseInt(values[i]) / 10.0;
-                                    DecimalFormat df1 = new DecimalFormat("0.0");
+                                    temp = Integer.parseInt(values[i]) ;
+                                    DecimalFormat df1 = new DecimalFormat("0");
                                     showTV[i].setText(df1.format(temp));
                                     break;
                                 case 2:
@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
                                     break;
                                 case 3:
                                     temp = Integer.parseInt(values[i]) / 100.00;
-                                    DecimalFormat df3 = new DecimalFormat("0.0");
+                                    DecimalFormat df3 = new DecimalFormat("0.00");
                                     showTV[i].setText(df3.format(temp));
                                     break;
                                 case 4:
