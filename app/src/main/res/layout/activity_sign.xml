@@ -27,7 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="管理您的智能硬件"/>
+            android:text="@string/sign_logo"/>
     </LinearLayout>
 
     <View
@@ -47,13 +47,13 @@
             android:id="@+id/imageView_id"
             android:layout_width="25dp"
             android:layout_height="35dp"
-            android:src="@drawable/id" />
+            android:src="@drawable/sign_user" />
 
         <EditText
             android:id="@+id/editTextIdSign_id"
             android:layout_width="200dp"
             android:layout_height="40dp"
-            android:hint="用户名"
+            android:hint="@string/sign_username"
             android:inputType="textEmailAddress"
 
             android:maxLength="10"
@@ -76,13 +76,13 @@
             android:id="@+id/imageView_key"
             android:layout_width="25dp"
             android:layout_height="35dp"
-            android:src="@drawable/key" />
+            android:src="@drawable/sign_password" />
 
         <EditText
             android:id="@+id/editTextKeySign_id"
             android:layout_width="200dp"
             android:layout_height="40dp"
-            android:hint="密码"
+            android:hint="@string/sign_password"
             android:inputType="textEmailAddress"
 
             android:maxLength="12"
@@ -105,13 +105,13 @@
             android:id="@+id/imageView_keyagain"
             android:layout_width="25dp"
             android:layout_height="35dp"
-            android:src="@drawable/key" />
+            android:src="@drawable/sign_password_again" />
 
         <EditText
             android:id="@+id/id_editTextKeyAgain"
             android:layout_width="200dp"
             android:layout_height="40dp"
-            android:hint="重复密码"
+            android:hint="@string/sign_password_again"
             android:inputType="textEmailAddress"
 
             android:maxLength="12"
@@ -134,7 +134,7 @@
             android:id="@+id/imageView_mail"
             android:layout_width="25dp"
             android:layout_height="35dp"
-            android:src="@drawable/mail" />
+            android:src="@drawable/sign_via" />
 
         <EditText
             android:id="@+id/id_editTextMail"

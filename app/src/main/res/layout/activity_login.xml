@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="59dp"
+        android:layout_height="61dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="77dp"
+        android:src="@drawable/root"
+         />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="147dp"
+        android:text="@string/sign_logo"
+        android:textAllCaps="false"
+        tools:text="@string/sign_logo" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="28dp"
+        android:layout_height="24dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="185dp"
+        android:src="@drawable/sign_user"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="69dp" />
+
+    <EditText
+        android:id="@+id/id_et_login_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="173dp"
+        android:layout_toEndOf="@+id/imageView2"
+        android:ems="10"
+        android:hint="@string/sign_username"
+        android:inputType="textPersonName"
+        android:layout_toRightOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="28dp"
+        android:layout_height="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/imageView2"
+        android:layout_marginTop="233dp"
+        android:src="@drawable/sign_password"
+        android:layout_alignLeft="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/id_et_login_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_et_login_username"
+        android:layout_toEndOf="@+id/imageView2"
+        android:ems="10"
+        android:hint="@string/sign_password"
+        android:inputType="textPassword"
+        android:layout_toRightOf="@+id/imageView2" />
+
+    <CheckBox
+        android:id="@+id/id_cb_login_rememberpassword"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/imageView2"
+        android:layout_below="@id/id_et_login_password"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="256dp"
+        android:text="@string/remember_password"
+        android:layout_alignLeft="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/id_tv_login_register"
+        android:gravity="center"
+        android:layout_width="89dp"
+        android:onClick="log_sign"
+        android:layout_height="31dp"
+        android:layout_alignTop="@+id/id_cb_login_rememberpassword"
+        android:layout_below="@id/id_et_login_password"
+        android:layout_toEndOf="@+id/imageView"
+        android:text="@string/register"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="14sp"
+        android:layout_toRightOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/id_bt_login_login"
+        android:layout_width="147dp"
+        android:onClick="log"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="155dp"
+        android:background="#55177cb0"
+        android:text="@string/login"
+        android:textSize="20sp" />
+
+    <ProgressBar
+        android:id="@+id/id_pb_login_progressbar"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="87dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

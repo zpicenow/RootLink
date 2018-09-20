@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
             if (msg.what == 0x123) {
                 for (int i = 0; i < 5; i++) {
                     while (true) {
-                        if (values[i] != "") {
+                        if (!values[i].equals("")) {
                             double temp = 0.00;
                             switch (i) {
                                 case 0:

@@ -9,9 +9,10 @@
     tools:context="com.example.zpice.rootlink.LogIn"
     android:weightSum="1">
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="90dp" />
+    <include layout="@layout/padding_20" />
+    <include layout="@layout/padding_20" />
+    <include layout="@layout/padding_20" />
+    <include layout="@layout/padding_20" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,116 +28,138 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" 
             android:layout_gravity="center"
-            android:text="管理您的智能硬件"/>
+            android:text="@string/sign_logo"/>
     </LinearLayout>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="20dp" />
+    <include layout="@layout/padding_20" />
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <View
-            android:layout_width="70dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="match_parent" />
 
 
         <ImageView
             android:id="@+id/imageView_id"
-            android:layout_width="25dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+
             android:layout_height="35dp"
-            android:src="@drawable/id" />
+            android:src="@drawable/sign_user" />
 
         <EditText
-            android:id="@+id/editTextId_id"
-            android:layout_width="200dp"
+            android:id="@+id/id_et_login_username"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+
             android:layout_height="40dp"
-            android:hint="用户名"
+            android:hint="@string/sign_username"
             android:inputType="textEmailAddress"
 
             android:maxLength="10"
              />
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
     </LinearLayout>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="20dp" />
+
+    <include layout="@layout/padding_20" />
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <View
-            android:layout_width="70dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="match_parent" />
 
 
         <ImageView
             android:id="@+id/imageView_key"
-            android:layout_width="25dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+
             android:layout_height="35dp"
-            android:src="@drawable/key" />
+            android:src="@drawable/sign_password" />
 
         <EditText
-            android:id="@+id/editTextKey_id"
-            android:layout_width="200dp"
+            android:id="@+id/id_et_login_password"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+
             android:layout_height="40dp"
-            android:hint="密码"
+            android:hint="@string/sign_password"
             android:maxLength="12"
             android:inputType="textPassword"
              />
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
     </LinearLayout>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="53dp" />
-
-
+    <include layout="@layout/padding_20" />
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="43dp"
-        android:orientation="horizontal"
-        android:gravity="center">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/btn_sign"
-            android:layout_width="65dp"
-            android:layout_height="match_parent"
-            android:background="#00000000"
-            android:text="注册账号"
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent" />
+
+        <CheckBox
+            android:id="@+id/id_cb_login_rememberpassword"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+
+            android:text="@string/remember_password"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="2"
+
+            android:layout_height="match_parent" />
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:textColor="@android:color/holo_blue_light"
+            android:text="@string/register"
             android:onClick="log_sign"
-            android:gravity="bottom|center_horizontal"
-            android:textSize="13dp"
-            tools:ignore="OnClick" />
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="2"
 
-        <View
-            android:layout_width="10dp"
+
             android:layout_height="match_parent" />
-        <Button
-            android:id="@+id/btn_log"
-            android:layout_width="110dp"
-            android:layout_height="match_parent"
-            android:background="#55177cb0"
-            android:text="登陆"
-            android:onClick="log"
-            android:textSize="25dp"/>
-        <View
-            android:layout_width="10dp"
-            android:layout_height="match_parent" />
-        <Button
-            android:id="@+id/btn_forget"
-            android:layout_width="65dp"
-            android:layout_height="match_parent"
-            android:background="#00000000"
-            android:text="水文系统"
-            android:onClick="forget"
-            android:gravity="bottom|center_horizontal"
-            android:textSize="13dp"/>
+
+
+
 
     </LinearLayout>
+    <Button
+        android:id="@+id/btn_log"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:background="#55177cb0"
+        android:text="@string/login"
+        android:onClick="log"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:textSize="20dp"/>
+
     <ProgressBar
-        android:id="@+id/id_bar_login"
+        android:id="@+id/id_pb_login_progressbar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
