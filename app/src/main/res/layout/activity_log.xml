@@ -26,7 +26,7 @@
             android:src="@drawable/root" />
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" 
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/sign_logo"/>
     </LinearLayout>
@@ -148,7 +148,7 @@
 
     </LinearLayout>
     <Button
-        android:id="@+id/btn_log"
+        android:id="@+id/id_bt_login_login"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:background="#55177cb0"
