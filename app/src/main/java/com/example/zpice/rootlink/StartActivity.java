@@ -38,7 +38,7 @@ public class StartActivity extends Activity   {
         @Override
         public void handleMessage(Message msg) {
             if (msg.what == 0x001) {
-                startActivity(new Intent(StartActivity.this, MainActivity.class));
+                startActivity(new Intent(StartActivity.this, Home.class));
                 finish();
 
             } else if (msg.what == 0x322) {

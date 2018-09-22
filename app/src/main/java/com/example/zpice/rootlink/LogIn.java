@@ -43,12 +43,14 @@ public class LogIn extends Activity {
 
             } else if (msg.what == 0x002) {
 
-                Intent intent = new Intent(LogIn.this, MainActivity.class);
+                Intent intent = new Intent(LogIn.this, Home.class);
                 startActivity(intent);
-                progressBar.setVisibility(View.VISIBLE);
                 finish();
             } else if (msg.what == 0x003) {
                 Toast.makeText(LogIn.this, "请输入用户名和密码", Toast.LENGTH_SHORT).show();
+
+            } else if (msg.what == 0x004) {
+                progressBar.setVisibility(View.VISIBLE);
 
             }
 
@@ -77,7 +79,7 @@ public class LogIn extends Activity {
 
 
     public void log_sign(View view) {
-
+        startActivity(new Intent(this, Sign.class));
     }
 
     public void log(View view) {
@@ -107,6 +109,7 @@ public class LogIn extends Activity {
                             //非主线程不允许修改UI，使用handle触发主线程修改
                             handler.sendEmptyMessage(0x001);
                         } else {
+                            handler.sendEmptyMessage(0x004);
                             TOKEN = MyHttpUrlConn.sendPost("http://www.rootlink.cn/api/login", param).split("\"")[9];
                             ISSTORE = true;
 

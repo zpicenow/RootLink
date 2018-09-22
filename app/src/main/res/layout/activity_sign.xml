@@ -20,8 +20,8 @@
         android:gravity="center_horizontal">
 
         <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:src="@drawable/root" />
         <TextView
             android:layout_width="wrap_content"
@@ -39,116 +39,230 @@
         android:orientation="horizontal">
 
         <View
-            android:layout_width="70dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="match_parent" />
 
 
         <ImageView
             android:id="@+id/imageView_id"
-            android:layout_width="25dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
             android:layout_height="35dp"
             android:src="@drawable/sign_user" />
 
         <EditText
             android:id="@+id/editTextIdSign_id"
-            android:layout_width="200dp"
+            android:layout_width="0dp"
+            android:layout_weight="4"
             android:layout_height="40dp"
             android:hint="@string/sign_username"
+            android:textSize="15dp"
             android:inputType="textEmailAddress"
 
             android:maxLength="10"
             />
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+
+            android:layout_height="match_parent" />
     </LinearLayout>
     <View
         android:layout_width="match_parent"
-        android:layout_height="15dp" />
+        android:layout_height="5dp" />
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <View
-            android:layout_width="70dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="match_parent" />
 
 
         <ImageView
             android:id="@+id/imageView_key"
-            android:layout_width="25dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
             android:layout_height="35dp"
             android:src="@drawable/sign_password" />
 
         <EditText
             android:id="@+id/editTextKeySign_id"
-            android:layout_width="200dp"
+            android:layout_width="0dp"
+            android:layout_weight="4"
             android:layout_height="40dp"
             android:hint="@string/sign_password"
+            android:textSize="15dp"
+
             android:inputType="textEmailAddress"
 
             android:maxLength="12"
             />
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
     </LinearLayout>
     <View
         android:layout_width="match_parent"
-        android:layout_height="15dp" />
+        android:layout_height="5dp" />
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <View
-            android:layout_width="70dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="match_parent" />
 
 
         <ImageView
             android:id="@+id/imageView_keyagain"
-            android:layout_width="25dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
             android:layout_height="35dp"
             android:src="@drawable/sign_password_again" />
 
         <EditText
-            android:id="@+id/id_editTextKeyAgain"
-            android:layout_width="200dp"
+            android:id="@+id/id_et_KeyAgain"
+            android:layout_width="0dp"
+            android:layout_weight="4"
             android:layout_height="40dp"
             android:hint="@string/sign_password_again"
+            android:textSize="15dp"
+
             android:inputType="textEmailAddress"
 
             android:maxLength="12"
-            />
+            tools:ignore="DuplicateIds" />
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
     </LinearLayout>
     <View
         android:layout_width="match_parent"
-        android:layout_height="15dp" />
+        android:layout_height="5dp" />
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <View
-            android:layout_width="70dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="match_parent" />
 
 
         <ImageView
             android:id="@+id/imageView_mail"
-            android:layout_width="25dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
             android:layout_height="35dp"
             android:src="@drawable/sign_via" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/id_editTextMail"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="40dp"
+                android:hint="@string/sign_via"
+                android:textSize="15dp"
+
+                android:maxLength="18"
+                android:inputType="textEmailAddress"
+                />
+            <Button
+                android:id="@+id/id_sign_sendcode"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:text="@string/sign_sure"
+                android:onClick="sign_send"
+                android:background="@android:color/holo_blue_light"
+                android:layout_height="match_parent"
+                tools:ignore="OnClick" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+
+        <ImageView
+            android:id="@+id/imageView_surecode"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_height="35dp"
+            android:src="@drawable/sign_surecode" />
 
         <EditText
-            android:id="@+id/id_editTextMail"
-            android:layout_width="200dp"
+            android:id="@+id/id_et_signsurecode"
+            android:layout_width="0dp"
+            android:layout_weight="4"
             android:layout_height="40dp"
-            android:hint="邮箱"
-            android:maxLength="18"
+            android:hint="@string/surecode"
+            android:textSize="15dp"
+
             android:inputType="textEmailAddress"
+
+            android:maxLength="12"
             />
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/id_cb_agreerule"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="@string/rule"
+            android:textSize="12dp"
+            android:onClick="agreeRule"
+            android:layout_height="wrap_content"
+            tools:ignore="OnClick" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/textrule"
+            android:textSize="12dp"
+            android:textColor="@android:color/holo_blue_light"
+            android:onClick="sign_rule"
+            android:layout_height="wrap_content"
+            tools:ignore="OnClick" />
+    </LinearLayout>
+
+
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="53dp" />
+        android:layout_height="43dp" />
 
 
     <LinearLayout
@@ -164,7 +278,7 @@
             android:layout_width="210dp"
             android:layout_height="match_parent"
             android:layout_weight="0.08"
-            android:background="#55177cb0"
+            android:background="@android:color/darker_gray"
             android:text="现在注册"
             android:onClick="signInSign"
             android:textSize="25dp" />
