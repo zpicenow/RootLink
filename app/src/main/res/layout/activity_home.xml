@@ -56,6 +56,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="40dp" />
                 <TextView
+                    android:id="@+id/homeCancel"
                     android:gravity="center"
                     android:text="实时监控管理接入设备的状态与运行情况\n并对设备进行远程操作"
                     android:layout_width="match_parent"
@@ -103,18 +104,24 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:src="@drawable/zixun"
-                android:layout_height="wrap_content" />
+                android:onClick="messageClick"
+                android:layout_height="wrap_content"
+                tools:ignore="OnClick" />
             <TextView
                 android:layout_width="match_parent"
                 android:text="开发者指南"
+                android:onClick="fileClick"
                 android:textStyle="bold"
                 android:gravity="center"
                 android:textSize="20sp"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                tools:ignore="OnClick" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:orientation="vertical"
-                android:layout_height="wrap_content">
+                android:onClick="fileClick"
+                android:layout_height="wrap_content"
+                tools:ignore="OnClick">
                 <TextView
                     android:background="#3c313a"
                     android:layout_gravity="center"

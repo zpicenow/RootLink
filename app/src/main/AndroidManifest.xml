@@ -31,7 +31,11 @@
         <activity android:name=".Sign" />
         <activity android:name=".Home" />
         <activity android:name=".HomeAvtivity" />
-        <activity android:name=".Blog"></activity>
+        <activity android:name=".Blog" />
+        <activity android:name=".Message" />
+        <activity android:name=".Tab" />
+        <activity android:name=".File" />
+        <activity android:name=".Product"></activity>
     </application>
 
 </manifest>
